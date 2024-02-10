@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 350px;
+    background-color: #383D3F;
+    margin: 200px auto;
+    align-items: center;
+    height: 600px;
+    padding: 5px;
+    border-radius: 30px;
+    position: relative;
+}
+.div_nome{
+    font-size: 30px;
+}
+
+.div_display{
+    height: 100px;
+    width: 90%;
+    justify-content: right;
+    padding-right: 40px;
+    font-size: 50px;
+    color: #eee;
+}
+
+.div_teclas{
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252829; 
+    font-weight: 400;
+    border: none;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius:60px;
+    margin: 2.5px;
+    margin-left: 10px;
+    color: #eee;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(243, 239, 239, 0.082);
+}
+.tecla:hover {
+    background-color: #252829a0;
+}
+.teclaOp{
+    background-color: #DF6B15;
+}
+.teclaOp:hover{
+    background-color: #df6d15cf;
+}
+
+svg {
+    width: 35px;
+}
+#colar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+#colar button {
+    border-radius: 5px;
+    background-color:rgba(243, 239, 239, 0.082);
+    color: #eee;
+    border: none;
+    display: flex;
+    padding: 5px;
+}
+#colar input {
+    display: none;
+}
